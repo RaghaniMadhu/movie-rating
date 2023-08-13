@@ -2,37 +2,122 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  padding: 0.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.search-bar {
+  padding: 0.5rem;
+  width: 20rem;
+  border-radius: 0.2rem;
+}
+
+.navlink {
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.home-movies-filters-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.movie-card {
+  width: 16rem;
+  box-shadow: black 2px 2px 7px 0px;
+  height: fit-content;
+  cursor: pointer;
+}
+
+.movie-card-img {
+  height: 20rem;
+  width: 16rem;
+}
+
+.movie-card h2,
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.movie-cards-div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.movie-card-div-btns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  padding: 0.2rem 0.5rem;
+}
+
+.single-movie-card-div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  padding: 0.2rem 0;
+}
+
+.single-movie-card-div-btns {
+  font-size: large;
+  background-color: black;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.movie-card-div-btns button {
+  font-size: large;
+  background-color: black;
+  color: white;
+  padding: 0.2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.single-movie-card {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.single-movie-card-img {
+  height: 32rem;
+  width: 20rem;
+}
+
+.single-movie-card-details {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: left;
+  gap: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.single-movie-card-details p {
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.single-movie-card-details h2 {
+  margin-block-end: 0;
+}
+
+.header h1 {
+  cursor: pointer;
 }
