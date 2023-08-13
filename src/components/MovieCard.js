@@ -36,15 +36,17 @@ function MovieCard({
       <p>{summary}</p>
       <div className="movie-card-div-btns">
         <button
-          onClick={() => {
+          onClick={(e) => {
             addMovieToStarred(id);
+            e.stopPropagation();
           }}
         >
           {isStarred ? "Starred" : "Star"}
         </button>
         <button
-          onClick={() => {
+          onClick={(e) => {
             addMovieToWatchListed(id);
+            e.stopPropagation();
           }}
         >
           {isWatchlisted ? "Added to Watchlist" : "Add to Watchlist"}

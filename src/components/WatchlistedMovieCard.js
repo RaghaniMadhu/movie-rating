@@ -28,17 +28,19 @@ function WatchlistedMovieCard({ movieData: { id, title, summary, imageURL } }) {
       <p>{summary}</p>
       <div className="movie-card-div-btns">
         <button
-          onClick={() => {
+          onClick={(e) => {
             addMovieToStarred(id);
+            e.stopPropagation();
           }}
         >
           {isStarred ? "Starred" : "Star"}
         </button>
         <button
-          onClick={() => {
+          onClick={(e) => {
             isWatchlisted
               ? removeMovieFromWatchlist(id)
               : addMovieToWatchListed(id);
+            e.stopPropagation();
           }}
         >
           {isWatchlisted ? "Remove from Watchlist" : "Add to Watchlist"}

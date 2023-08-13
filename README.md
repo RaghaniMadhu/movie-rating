@@ -20,3 +20,5 @@
 
 5. Starred Page: List the movies that are star marked and persist the data on this page.
    - Implement an “Unstar” button.
+
+Completed Everything Except Add a Movie in given time.
